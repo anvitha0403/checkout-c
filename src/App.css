@@ -194,7 +194,7 @@ label{
  text-align: center;
  text-decoration: none;
 
-  align-self: end;
+  align-self:flex- end;
   /* Orange */
   color:white;
   background: #F2994A;
@@ -207,7 +207,7 @@ label{
 .main-cart{
   display:flex;
   justify-content: flex-end;
-  align-items:start;
+  align-items:flex-start;
   flex:1;
 }
 
@@ -264,10 +264,43 @@ select{
  
  
 }
+.footer{
+  color:#BDBDBD;
+  display:flex;
+  align-items:flex-end;
+  height:20vh;
+  padding:20px;
+justify-content:center;
+}
 .bor{
   border: 1px solid #828282;
       padding:10px;
       height: 56px;
       
       border-radius: 12px;
+}
+
+@media screen and (max-width: 600px) {
+ .container{
+   width: 95vw;
+  
+ }
+ .flex-col{
+   display: flex;
+   flex-direction: column-reverse;
+
+ }
+.main-cart {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+ align-items:center;
+
+  flex: 1;
+}
+.button {
+  align-self: center;
+}
+
 }

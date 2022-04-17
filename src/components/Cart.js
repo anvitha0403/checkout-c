@@ -6,8 +6,7 @@ export default function Cart() {
       <CartItem />
       <CartItem />
    
-      {/* <CartItem/> */}
-      {/* <CartItem/> */}
+     
       <div className="cart-summary-container">
         <div className="cart-summary">
           <span className="cart-sum-title">Shipping</span>
