@@ -5,7 +5,7 @@ const Counter=()=> {
         console.log(num)
         
         setnum((prev) => {
-        if (prev == 0&&num==-1) {
+        if (prev === 0&&num===-1) {
           return prev;
         }
     return prev + num;
